@@ -1,0 +1,28 @@
+.container {
+    padding: 1em;
+    max-width: 90vw;
+    margin: 1em auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    color: #cf8700;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.emptyMessage {
+    text-align: center;
+    color: #464646;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.appointmentsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}

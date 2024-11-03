@@ -1,0 +1,54 @@
+.card {
+    flex: 1 1 calc(30% - 16px);
+    min-width: 200px;
+    max-width: 225px;
+    background-color: #ffffff;
+    border: 1px solid #cf8700;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card div *:not(:first-child):not(:last-child) {
+    margin: 0.5em 0;
+}
+
+.title {
+    color: #cf8700;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.status {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.date, .time {
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+.cancel {
+    background-color: #cf8700;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cancel:hover {
+    background-color: #d68f00;
+    transform: scale(1.05);
+}
+
+.cancel:disabled {
+    background-color: #a3a3a3;
+    cursor: not-allowed;
+}

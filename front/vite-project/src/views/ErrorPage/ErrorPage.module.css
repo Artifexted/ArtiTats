@@ -1,0 +1,29 @@
+.notFoundContainer {
+    text-align: center;
+    margin: 1em auto 2em auto;
+}
+
+.titleError {
+    color: #cf8700;
+}
+
+.textRedirect {
+    font-style: italic;
+}
+
+.notFoundImage {
+    height: 420px;
+    display: block;
+    margin: 0 auto 0.5em auto;
+}
+
+.homeButton {
+    background-color: #cf8700;
+    padding: 1em;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
