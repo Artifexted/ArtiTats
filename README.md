@@ -8,7 +8,7 @@ Este proyecto tiene como objetivo desarrollar una aplicación web para la reserv
 Es importante configurar correctamente un archivo ".env" que contenga las variables de entorno adecuadas para realizar la conexión a la base de datos. Hay un ejemplo de uso en ".env.example" dentro de la carpeta "back".
 
 ## Tecnologías utilizadas
-- **Frontend**: HTML, CSS, React, Node.js, Express.js, SQL.
+- TypeScript, React, Node.js, Express.js, PostgreSQL.
 
 ## Funcionalidades principales
 1. **Registro de usuario**:
