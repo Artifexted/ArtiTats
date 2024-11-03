@@ -6,6 +6,7 @@
 
 .mainContent {
     flex: 1;
+    margin: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
