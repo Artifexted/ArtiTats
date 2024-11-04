@@ -4,6 +4,9 @@ import appointmentsRouter from "./appointmentsRouter";
 
 const router: Router = Router();
 
+router.use("/test", (req, res) => {
+    res.status(200).send("Success test.")
+})
 router.use("/users", usersRouter);
 router.use("/appointments", appointmentsRouter);
 

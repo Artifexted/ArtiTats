@@ -7,6 +7,9 @@ const express_1 = require("express");
 const usersRouter_1 = __importDefault(require("./usersRouter"));
 const appointmentsRouter_1 = __importDefault(require("./appointmentsRouter"));
 const router = (0, express_1.Router)();
+router.use("/test", (req, res) => {
+    res.status(200).send("Success test.");
+});
 router.use("/users", usersRouter_1.default);
 router.use("/appointments", appointmentsRouter_1.default);
 exports.default = router;
