@@ -19,7 +19,7 @@ export const UsersProvider = ({ children }) => {
 
 	const loginUser = async (userData) => {
 		const responseUser = await axios.post(
-			"http://localhost:3000/users/login",
+			"https://artitats.onrender.com/users/login",
 			userData
 		);
 
@@ -28,7 +28,7 @@ export const UsersProvider = ({ children }) => {
 	};
 
 	const registerUser = async (userData) => {
-		await axios.post("http://localhost:3000/users/register", userData);
+		await axios.post("https://artitats.onrender.com/users/register", userData);
 	};
 
 	const logOutUser = () => {
@@ -38,13 +38,13 @@ export const UsersProvider = ({ children }) => {
 	};
 
 	const getUserAppointments = async (userId) => {
-		const response = await axios.get(`http://localhost:3000/users/${userId}`);
+		const response = await axios.get(`https://artitats.onrender.com/users/${userId}`);
 		setUserAppointments(response.data.appointments);
 	};
 
 	const cancelAppointment = async (appointmentId) => {
 		await axios.put(
-			`http://localhost:3000/appointments/cancel/${appointmentId}`
+			`https://artitats.onrender.com/appointments/cancel/${appointmentId}`
 		);
 
 		const userAppointmentsUpdate = userAppointments.map((appointment) => {
@@ -63,7 +63,7 @@ export const UsersProvider = ({ children }) => {
 			userId: user,
 		};
 
-		await axios.post(`http://localhost:3000/appointments/schedule`, appointmentValues);
+		await axios.post(`https://artitats.onrender.com/appointments/schedule`, appointmentValues);
 	};
 
 	const value = {
